@@ -1,7 +1,7 @@
 job('ejemplo2-job-DSL') {
   description('My first job DSL de ejemplo')
   scm {
-        git('https://github.com/macloujulian/jenkins.job.parametrizado.git', 'main') { node -> // is hudson.plugins.git.GitSCM
+        git('https://github.com/Dante205/jenkins.job.parametrizado.git', 'main') { node -> // is hudson.plugins.git.GitSCM
             node / gitConfigName('DanteDSL')
             node / gitConfigEmail('dante@dante.com')
         }
